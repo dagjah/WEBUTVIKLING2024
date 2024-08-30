@@ -23,7 +23,7 @@
     <header>
         <!-- Definerer toppseksjonen (header) på nettsiden, vanligvis brukt til å inkludere navigasjon og logo. -->
         
-        <a href="index.html"><h1>TV</h1></a>
+        <a href="index.html" id="topp"><h1>TV</h1></a>
         <!-- Hovedoverskrift for siden, brukt til å indikere hovedtemaet eller tittelen. -->
         
         <nav>
@@ -46,6 +46,9 @@
                     <a href="about.html">Om oss</a>
                     <!-- En lenke til en hypotetisk "Om oss"-side, også med "#" som plassholder. -->
                 </li>
+                <li>
+                    <a href="#bunn">Snarvei til footer</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -62,7 +65,7 @@
             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
             <!-- En paragraf med fylltekst (lorem ipsum), som brukes som en plassholder for å vise hvor tekst vil plasseres. -->
             
-            <a href="#">Les mer om hvorfor krigen startet</a>
+            <a href="about.html#kult">Les mer om hvorfor krigen startet</a>
             <!-- En lenke som inviterer brukeren til å lese mer om temaet. -->
         </section>
 
@@ -120,7 +123,10 @@
         </nav>
     </aside>
 
-    <footer>2024 Ann-Charlott</footer>
+    <footer id="bunn">
+    <p>2024 Dag J</p>
+    <a href="#topp">Tilbake til topp</a>
+    </footer>
     <!-- Definerer bunnteksten på siden, ofte brukt til copyright-informasjon eller kontaktinformasjon. -->
 
 </body>
