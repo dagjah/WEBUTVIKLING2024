@@ -39,20 +39,38 @@
                 <form method="post">
                     <!-- metode 1-->
                     <label for="navn">Navn:</label>
-                    <input type="text" name="navn" placeholder="Nora Nordmann.." id="navn" maxlength="45">
+                    <input type="text" name="navn" placeholder="Nora Nordmann.." id="navn" maxlength="45" required>
                     <!-- metode 2-->
                     <label>
                         Epost:
-                        <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">>
+                        <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>>
                     </label>
                     <label>
                         Emne:
-                        <input type="text" name="emne" placeholder="hva handler det om?">
+                        <input type="text" name="emne" placeholder="hva handler det om?" required>
                     </label>
                     <label>
                         Melding:
-                        <textarea name="melding"></textarea>
+                        <textarea name="melding" required></textarea>
                     </label>
+                    <label>
+                        nei
+                        <input type="radio" name="janei">
+                    </label>
+                    <label>
+                        ja
+                        <input type="radio" name="janei">
+                    </label>
+                    <label>
+                        Favoritt mat
+                        <select>
+                            <option value="pizza">Pizza</option>
+                            <option value="sushi">Sushi</option>
+                            <option value="kebab">Kebab</option>
+                            <option value="burger">Burger</option>
+                        </select>
+                    </label>
+                   
                     <input type="submit" value="send melding">
                 </form>
             </section>
