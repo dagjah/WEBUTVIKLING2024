@@ -21,24 +21,54 @@
         <section>
             <h2>Skjema:</h2>
             <form>
-                <label for="name">Navn:</label>
-                <input type="text" name="name" id="name" placeholder="Eks. Ola Nordmann..." pattern="[A-Za-zæøåÆØÅ ]{2,}" required >
-                
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="eks. olanordmann@example.com" required >
-
-                <label for="password">Passord:</label>
-                <input type="password" name="password" id="password" placeholder="********" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required >
-
-                <label for="age">Alder:</label>
-                <input type="number" name="age" id="age" min="18" max="99" placeholder="eks. 18" required >
-
-                <label for="phone">Telefonnummer:</label>
-                <input type="tel" name="phone" id="phone" pattern="[0-9]{8,12}" placeholder="xxxxxxxx" required >
-
-                <label for="birthdate">Fødselsesdag:</label>
-                <input type="date" name="birthdate" id="birthdate" max="2023-12-31" required >
-
+                <section>
+                    <label for="name">Navn:</label>
+                    <input type="text" name="name" id="name" placeholder="Eks. Ola Nordmann..." pattern="[A-Za-zæøåÆØÅ ]{2,}" required >
+                </section>
+                <section>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="eks. olanordmann@example.com" required >
+                </section>
+                <section>
+                    <label for="password">Passord:</label>
+                    <input type="password" name="password" id="password" placeholder="********" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required >
+                </section>
+                <section>
+                    <label for="age">Alder:</label>
+                    <input type="number" name="age" id="age" min="18" max="99" placeholder="eks. 18" required >
+                </section>
+                <section>
+                    <label for="phone">Telefonnummer:</label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{8,12}" placeholder="xxxxxxxx" required >
+                </section>
+                <section>
+                    <label for="birthdate">Fødselsesdag:</label>
+                    <input type="date" name="birthdate" id="birthdate" max="2023-12-31" required >
+                </section>
+                <section>
+                    <input type="radio" name="gender" id="mann" required>
+                    <label for="mann">Mann</label>
+                    <input type="radio" name="gender" id="kvinne" required>
+                    <label for="kvinne">Kvinne</label>
+                    <input type="radio" name="gender" id="annet" required>
+                    <label for="annet">Annet</label>
+                </section>
+                <section>
+                    <label for="country">Land</label>
+                    <select name="country" id="country" required>
+                        <option value="">Velg et land:</option>
+                        <option value="norge">Norge</option>
+                        <option value="sverige">Sverige</option>
+                        <option value="danmark">Danmark</option>
+                    </select>
+                </section>
+                <section>
+                    <input type="checkbox" name="privacy" id="privacy" required>
+                    <label for="privacy">Personvern godkjenning</label>
+                </section>
+                <section>
+                    <input type="submit" value="Send Inn">
+                </section>
             </form>
         </section>
     </main>
