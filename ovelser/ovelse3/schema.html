@@ -21,22 +21,22 @@
         <section>
             <form>
                 <label for="name">Navn:</label>
-                <input type="text" name="name" id="name" placeholder="Eks. Ola Nordmann..." pattern="[A-Za-zæøåÆØÅ ]{2,}" required />
+                <input type="text" name="name" id="name" placeholder="Eks. Ola Nordmann..." pattern="[A-Za-zæøåÆØÅ ]{2,}" required >
                 
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="eks. olanordmann@example.com" required />
+                <input type="email" name="email" id="email" placeholder="eks. olanordmann@example.com" required >
 
                 <label for="password">Passord:</label>
-                <input type="password" name="password" id="password" placeholder="********" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required />
+                <input type="password" name="password" id="password" placeholder="********" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required >
 
                 <label for="age">Alder:</label>
-                <input type="number" name="age" id="age" min="18" max="99" required />
+                <input type="number" name="age" id="age" min="18" max="99" placeholder="eks. 18" required >
 
                 <label for="phone">Telefonnummer:</label>
-                <input type="tel" name="phone" id="phone" pattern="[0-9]{8,12}" required />
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{8,12}" placeholder="xxxxxxxx" required >
 
                 <label for="birthdate">Fødselsesdag:</label>
-                <input type="date" type="date" max="2023-12-31" required />
+                <input type="date" name="birthdate" id="birthdate" max="2023-12-31" required >
 
             </form>
         </section>
