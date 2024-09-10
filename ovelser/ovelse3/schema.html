@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Oppgave 2</title>
+    <title>Øvelse 3 -> Oppgave 1</title>
 </head>
 <body>
     <header>
@@ -21,7 +21,23 @@
         <section>
             <form>
                 <label for="name">Navn:</label>
-                <input type="text" name="name" id="name" placeholder="Eks. Ola Nordmann..." />
+                <input type="text" name="name" id="name" placeholder="Eks. Ola Nordmann..." pattern="[A-Za-zæøåÆØÅ ]{2,}" required />
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="eks. olanordmann@example.com" required />
+
+                <label for="password">Passord:</label>
+                <input type="password" name="password" id="password" placeholder="********" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required />
+
+                <label for="age">Alder:</label>
+                <input type="number" name="age" id="age" min="18" max="99" required />
+
+                <label for="phone">Telefonnummer:</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{8,12}" required />
+
+                <label for="birthdate">Fødselsesdag:</label>
+                <input type="date" type="date" max="2023-12-31" required />
+
             </form>
         </section>
     </main>
