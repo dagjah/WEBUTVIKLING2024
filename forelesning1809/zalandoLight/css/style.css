@@ -1,0 +1,17 @@
+img{
+    width: 100%;
+}
+#main-logo{
+     max-width: 200px;
+     display: block;
+     margin: 0px auto;
+     width: 100%;
+}
+
+.flex-menu{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}

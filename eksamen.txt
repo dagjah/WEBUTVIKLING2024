@@ -1,2 +1,4 @@
 viktig:
     mappestruktur
+
+    font-family: vanlig å bruke 3 alternativer
