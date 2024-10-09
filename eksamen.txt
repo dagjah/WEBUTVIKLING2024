@@ -2,3 +2,7 @@ viktig:
     mappestruktur
 
     font-family: vanlig å bruke 3 alternativer
+
+lov til å blå-kopiere javascript for dropdown menu
+
+!important brukes med veldig omhu
